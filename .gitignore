@@ -1,0 +1,23 @@
+# Raw source data — not redistributed, see data/raw/README.md
+data/raw/*.xlsx
+data/raw/*.xls
+data/raw/*.csv
+!data/raw/README.md
+
+# Notebook checkpoints / caches
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# OS / editor junk
+.DS_Store
+.vscode/
+.idea/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Large local artifacts / scratch pickles (not part of the public repo)
+*.pkl

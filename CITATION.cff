@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below. See DATA_LICENSING.md for citing the underlying data sources."
+title: "ACE-inhibitory peptide regression: a leakage-and-elimination audit"
+type: software
+authors:
+  - name: "Yasmine Ben Alaya"
+repository-code: "[fill in your GitHub URL after pushing]"
+license: MIT
+date-released: "2026-09-05"

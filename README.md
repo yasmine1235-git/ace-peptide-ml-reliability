@@ -134,9 +134,12 @@ we would genuinely like to know and cite it correctly.
 
 ## Status
 
-This is a research diagnostic, not a maintained benchmark package or a predictive
-model release. It was prepared as a workshop submission (ICBINB-BIO @ NeurIPS 2026,
-negative-results track) but ultimately not submitted; it's released here as a
-reproducible artifact rather than left unfinished on a laptop. Issues and corrections
-are genuinely welcome, especially on anything flagged as unverified in
-`DATA_LICENSING.md` or `docs/findings_and_evaluation.md`.
+Issues, corrections, and constructive feedback are genuinely welcome. I come from
+an AI engineering background and am still building my foundations in biology and
+bioinformatics. This project is part of that learning process, and I am actively
+trying to improve both my biological understanding and the methodological rigor of
+the analysis :D
+
+If you spot a biological misconception, methodological issue, questionable assumption,
+or something that could be improved, please feel free to open an issue or start a
+discussion. Corrections are especially appreciated!!

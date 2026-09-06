@@ -1,15 +1,19 @@
 # ACE-inhibitory peptide regression: a leakage-and-elimination audit
 
-This repository investigates why sequence-based regression of ACE-inhibitory peptide
-potency (log IC50 / pIC50) is reported to work for very short peptides and to fail for
-longer ones — and specifically, whether that failure is a real biological/statistical
-ceiling or an artifact of how these compiled datasets are typically evaluated.
+This repository investigates the reliability of machine-learned regression of ACE-inhibitory
+peptide potency (`log10(IC50)`). We examine whether reported differences in predictability
+across peptide lengths reflect reproducible signal, sequence-level leakage, measurement
+heterogeneity, representation choice, or limitations of the underlying compiled datasets.
+
+The analysis evaluates multiple molecular representations and regression models under
+repeated and sequence-aware validation, with particular attention to duplicate-sequence
+leakage and the robustness of apparent predictive signal across peptide lengths.
 
 ## The headline result
 
 On AHTPDB, a peptide-activity database compiled from 400+ independent source studies,
 **ordinary (row-wise) cross-validation reports small positive R² at peptide lengths
-3–6** — but this signal is not real. It collapses to null once cross-validation folds
+3–6**  but this signal is not real. It collapses to null once cross-validation folds
 are grouped by exact sequence identity, so that no single peptide's repeated
 measurements (from different source studies) can appear in both the training and test
 fold of the same split:
